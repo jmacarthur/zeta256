@@ -7,11 +7,34 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.2"
    width="744.09448"
    height="1052.3622"
-   id="svg2">
+   id="svg2"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="stripboard-plain.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1124"
+     id="namedview1524"
+     showgrid="false"
+     inkscape:zoom="0.89702957"
+     inkscape:cx="372.04724"
+     inkscape:cy="1594.8205"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
   <defs
      id="defs4" />
   <metadata
@@ -7317,4 +7340,25 @@
          style="font-size:10px;text-align:center;text-anchor:middle;fill:none;stroke:#00ff00;stroke-width:0.03543307;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
     </g>
   </g>
+  <text
+     xml:space="preserve"
+     style="font-size:8px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans Narrow;-inkscape-font-specification:Liberation Sans Narrow Bold Condensed"
+     x="41.778622"
+     y="-680.26825"
+     id="text4501"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan4503"
+       x="41.778622"
+       y="-680.26825"
+       style="font-size:36px">This diagram contains unstroked paths and will not preview well!</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:8px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans Narrow;-inkscape-font-specification:Liberation Sans Narrow Bold Condensed"
+     x="934.8952"
+     y="-498.96475"
+     id="text4505"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan4507"></tspan></text>
 </svg>
