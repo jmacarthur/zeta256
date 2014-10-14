@@ -1,0 +1,39 @@
+; Example Z80 assembler program to perform Euclid's algorithm
+; This isn't written for any actual assembler; it's just my
+; notes for me to hand assemble.
+
+; Pseudocode from Wikipedia:
+; function gcd(a, c)
+;    while a != c
+;        if a > c
+;           a := a − c
+;        else
+;           c := c − a
+;    return a
+
+; Thus:
+0000 LD C, N ; Read c from #0x01
+0002 LD A, N ; Read a from #0x03
+
+loop:
+0004 CP C ; Compare to A (A-C); Carry set if C>A.
+0005 JP Z done
+0007 JP C c_gt_a
+
+a_gt_c:
+0009 SUB C
+000A JP loop
+
+c_gt_a:
+; Now emulate RSB C:
+; Hopefully this can be optimized!
+000B LD B, A
+000C LD A, C
+000D SUB B
+000E LD C, A
+000F LD A, B
+0010 JP loop
+
+done: 
+0012 LD [00FF] A
+0015 JP done
