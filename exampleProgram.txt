@@ -45,3 +45,53 @@ done:
 0021 00 0000 0000 #0x00
 0022 18 0001 1000 JP N+2
 0023 FB 1111 1011 #-4 (done)
+
+
+# JP C test:
+
+ADDR OP HIGH LOW  DISASSEMBLY
+0000 3E 0011 1110 LD A, #N
+0001 36 0011 0110 #52
+0002 06 0000 0110 LD B, #N
+0003 4E 0100 1110 #78
+
+loop:
+0004 B8 1011 1000 CP B
+0005 38 0011 1000 JP C +N
+0006    1111 1110 -1 > #0
+
+This should should execute in a loop and not escape.
+Yep, works
+
+So the negative test:
+
+ADDR OP HIGH LOW  DISASSEMBLY
+0000 3E 0011 1110 LD A, #N
+0001 4E 0100 1110 #78
+0002 06 0000 0110 LD B, #N
+0003 36 0011 0110 #52
+
+loop:
+0004 B8 1011 1000 CP B
+0005 38 0011 1000 JP C +N
+0006 0000 1000 -1 > #0
+0007 0000 0000 NOP
+0008 0000 0000 NOP
+
+This should execute all the NOPs and not jump to 0009... TEst passes.
+
+# JP Z test:
+
+ADDR OP HIGH LOW  DISASSEMBLY
+0000 3E 0011 1110 LD A, #N
+0001 36 0011 0110 #78
+0002 06 0000 0110 LD B, #N
+0003 4E 0100 1110 #78
+
+loop:
+0004 B8 1011 1000 CP B
+0005 38 0010 1000 JP Z +N
+0006    1111 1110 -1 > #0
+
+This should sit in a loop and never escape.
+Yep, works
