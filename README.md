@@ -33,6 +33,8 @@ The rotary switch is a 10 or 16 position encoded switch with the '1' line connec
 
 ![Zeta Overview diagram](/images/internal-resized-for-web.jpeg)
 
+There are three extra LEDs added to this which aren't on the circuit diagram. They are connected via a 1k resistor to 5V and the !WR, !RD and !M1 lines which show when memory is being written to and read, and when the CPU is performing an instruction fetch. These help when debugging.
+
 Whatever you do, don't assemble this on tripad board. I did because Maplin never stock proper stripboard. The underside of this board looks appalling.
 
 
