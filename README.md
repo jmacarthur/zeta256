@@ -31,7 +31,7 @@ The rotary switch is a 10 or 16 position encoded switch with the '1' line connec
 
 ## Photo of circuit board
 
-![Zeta Overview diagram](/images/internal.jpeg)
+![Zeta Overview diagram](/images/internal-resized-for-web.jpeg)
 
 Whatever you do, don't assemble this on tripad board. I did because Maplin never stock proper stripboard. The underside of this board looks appalling.
 
