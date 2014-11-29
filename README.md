@@ -29,4 +29,10 @@ The inverting schmitt trigger IC (74HCT14) performs debouncing for the clock lin
 
 The rotary switch is a 10 or 16 position encoded switch with the '1' line connected to the clock line and the common connector to 5V. Note that if you leave the rotary switch in an 'odd' position, the front panel clock button will not do anything.
 
+## Photo of circuit board
+
+![Zeta Overview diagram](/images/internal.jpeg)
+
+Whatever you do, don't assemble this on tripad board. I did because Maplin never stock proper stripboard. The underside of this board looks appalling.
+
 
