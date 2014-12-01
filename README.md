@@ -25,7 +25,7 @@ Because of the number of DIP chips in this project, it suits stripboard well, an
 
 The Z80 has two pins called !BUSREQ and !BUSACK. !BUSREQ is an input, normally high (5V), which means the Z80 is in control of the address and data buses, except when RD is high which means the RAM chip can control the data bus. The "Front Panel/Processor" switch on the front panel pulls !BUSREQ to 0V when "Front Panel" is selected. After a few clock cycles, the Z80 will then drop the output !BUSACK. This is connected to the output enable pins of the two input buffers (the SN74LVC245AN chips). The switch positions are then driven onto the buses, and you can enter data into the RAM using the write button.
 
-The inverting schmitt trigger IC (74HCT14) performs debouncing for the clock line, and inverts and debounces the reset button. None of the other inputs are debounced.
+The inverting schmitt trigger IC (74HCT14) performs debouncing for the clock line, and inverts and debounces the reset button. None of the other inputs are debounced. There are three spare inverters on the 74HCT14 chip, which is enough to make a basic clock generator if you wanted this to run at more than a few hertz.
 
 The rotary switch is a 10 or 16 position encoded switch with the '1' line connected to the clock line and the common connector to 5V. Note that if you leave the rotary switch in an 'odd' position, the front panel clock button will not do anything.
 
@@ -37,4 +37,9 @@ There are three extra LEDs added to this which aren't on the circuit diagram. Th
 
 Whatever you do, don't assemble this on tripad board. I did because Maplin never stock proper stripboard. The underside of this board looks appalling.
 
+## Thanks
+
+The design owes a few elements to MarcusB's minimal Z80 computer, which can be found here:
+
+http://letsmakerobots.com/blog/markusb/i-am-building-z80-computer
 
