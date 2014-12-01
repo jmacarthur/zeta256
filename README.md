@@ -29,6 +29,8 @@ The inverting schmitt trigger IC (74HCT14) performs debouncing for the clock lin
 
 The rotary switch is a 10 or 16 position encoded switch with the '1' line connected to the clock line and the common connector to 5V. Note that if you leave the rotary switch in an 'odd' position, the front panel clock button will not do anything.
 
+The RAM is a 32 kilobyte static RAM chip, but only address lines 0-7 are connected, so all memory will alias the 0-255 byte range. You could fairly easily wire up some more address lines. With a bit of creative programming, you could even use that memory without adding more address switches. I don't think anyone will be sufficiently interested to toggle in a program larger than 256 bytes, though.
+
 ## Photo of circuit board
 
 ![Zeta Overview diagram](/images/internal-resized-for-web.jpeg)
