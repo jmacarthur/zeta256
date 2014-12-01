@@ -43,3 +43,6 @@ The design owes a few elements to MarcusB's minimal Z80 computer, which can be f
 
 http://letsmakerobots.com/blog/markusb/i-am-building-z80-computer
 
+The case started out as a box from Rahul's BoxMaker:
+
+http://boxmaker.connectionlab.org/
