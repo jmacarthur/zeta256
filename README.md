@@ -19,6 +19,8 @@ There are some errata in the current source - please see the issues section for 
 
 Because of the number of DIP chips in this project, it suits stripboard well, and I haven't found a good program for designing stripboard layouts yet. Fritzing supports small stripboard, but has performance problems when you use a layout as big as this one.
 
+Update, 28th Februray 2016: Samuel Doye has sent in a KiCad project with a schematic layout!
+
 ## How does it work?
 
 ![Zeta Overview diagram](/images/overview.png)
@@ -39,7 +41,13 @@ There are three extra LEDs added to this which aren't on the circuit diagram. Th
 
 Whatever you do, don't assemble this on tripad board. I did because Maplin never stock proper stripboard. The underside of this board looks appalling.
 
+## If you want to build this...
+
+Please bear in mind that there may be errors in any of the diagrams or instructions here. Like all my projects, I usually only build things once and write up the documentation afterwards, so it's quite possible I've omitted stages. Please make sure you understand what you're building before buying any components. I can sometimes offer some help by email, but ultimately I do not make any guarantees that this project will work.
+
 ## Thanks
+
+The KiCad files were made by Samuel Doye.
 
 The design owes a few elements to MarcusB's minimal Z80 computer, which can be found here:
 
